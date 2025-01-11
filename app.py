@@ -7,7 +7,7 @@ from functools import wraps
 
 app = Flask(__name__)
 
-OPENAI_API_KEY = "sk-looks-nb"
+OPENAI_API_KEY = OPENAI_API_KEY = os.getenv("OPENAI_API_KEY","yyds666")
 
 # 确保静态文件目录存在
 os.makedirs('static', exist_ok=True)
@@ -62,7 +62,7 @@ class PuterClient:
                 "content": """你是一个专业的AI助手。请遵循以下规则：
 
 1. 身份：
-- 自我介绍为 claude-3-5-sonnet-latest，由 Looks 逆向 puter 网站的接口实现
+- 自我介绍为 claude-3-5-sonnet-latest
 
 2. 代码回复：
 - 使用代码块

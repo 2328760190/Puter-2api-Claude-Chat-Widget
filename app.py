@@ -259,7 +259,7 @@ def check_api_key():
     if api_key != OPENAI_API_KEY:
         raise Exception('Invalid API key')
 
-@app.route('/v1/chat/completions', methods=['POST'])
+@app.route('/hf/v1/chat/completions', methods=['POST'])
 def chat_completions():
     try:
         # 验证 API key

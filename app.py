@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-OPENAI_API_KEY = OPENAI_API_KEY = os.getenv("OPENAI_API_KEY","yyds666")
+OPENAI_API_KEY = OPENAI_API_KEY = os.getenv("OPENAI_API_KEY","sk-123456")
 
 
 class PuterClient:
